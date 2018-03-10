@@ -1,10 +1,10 @@
 ## What is pmft?
 
-pmft is a tool to flash Pro Micros with a hex file. It works much better than other solutions such as dfu-programmer and avrdude. It was created with the [https://reddit.com/r/mechanicalkeyboards](mechanical keyboard community) in mind, but works for any application. 
+pmft is a tool to flash Pro Micros with a hex file. It works much better than other solutions such as dfu-programmer and avrdude. It was created with the [mechanical keyboard community](https://reddit.com/r/mechanicalkeyboards) in mind, but works for any application. 
 
 ## How does it work?
 
-It uses a python script from paranoid.rat on the [https://forums.adafruit.com/viewtopic.php?f=22&t=35335](Adafruit Forums) and avrdude as its base. I built a wrapper around this script that allows for installation and ease of use. All code/binaries I did not create belongs to the respective owners and is licensed under the license the owner chose. 
+It uses a python script from paranoid.rat on the [Adafruit Forums](https://forums.adafruit.com/viewtopic.php?f=22&t=35335) and avrdude as its base. I built a wrapper around this script that allows for installation and ease of use. All code/binaries I did not create belongs to the respective owners and is licensed under the license the owner chose. 
 
 ## How do I install it?
 
