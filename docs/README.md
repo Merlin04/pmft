@@ -4,7 +4,7 @@ pmft is a tool to flash Pro Micros with a hex file. It works much better than ot
 
 ## How does it work?
 
-It uses a python script from paranoid.rat on the [https://forums.adafruit.com/viewtopic.php?f=22&t=35335](Adafruit Forums) and avrdude as its base. I built a wrapper around this script that allows for installation and ease of use. 
+It uses a python script from paranoid.rat on the [https://forums.adafruit.com/viewtopic.php?f=22&t=35335](Adafruit Forums) and avrdude as its base. I built a wrapper around this script that allows for installation and ease of use. All code/binaries I did not create belongs to the respective owners and is licensed under the license the owner chose. 
 
 ## How do I install it?
 
