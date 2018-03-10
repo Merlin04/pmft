@@ -1,0 +1,15 @@
+#!/usr/bin/python2
+import os
+import sys
+pwd = os.getcwd()
+print("pmft v0.1")
+if (sys.argv[1] == "help"):
+    print("Usage: pmft [hex file path] [port]")
+    sys.exit()
+avrdudepath = os.path.realpath("avrdude-pmft")
+filepath = sys.argv[1]
+if (sys.argv[2]):
+    port = sys.argv[2]
+    os.system("python \"" + avrdudepath + "/pmft-flasher.py\" -p atmega32u4 -c avr109 -C \"" + avrdudepath + "/avrdude-pmft.conf\" -P " + port + " -U flash:w:" + pwd + "/" + filepath + ":i")
+else:
+    os.system("python \"" + avrdudepath + "/pmft-flasher.py\" -p atmega32u4 -c avr109 -C \"" + avrdudepath + "/avrdude-pmft.conf\" -U flash:w:" + pwd + "/" + filepath + ":i")
