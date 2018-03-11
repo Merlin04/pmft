@@ -10,6 +10,10 @@ It uses a python script from paranoid.rat on the [Adafruit Forums](https://forum
 
 Download the zip file containing the files. Run the installer script for your platform:
 
+#### Note for Linux and MacOS:
+
+Be sure to keep all of the files together, the python script copies the files into their folders. Once you install pmft, you can delete the files from the zip file. 
+
 ### Linux:
 
 `sudo python linux-install.py`
@@ -18,9 +22,9 @@ Download the zip file containing the files. Run the installer script for your pl
 
 `sudo python macos-install.py`
 
-### Windows (WIP):
+### Windows:
 
-Double-click on the installer executable. 
+Double-click on the installer executable in the `pmft-win folder`. You don't need any other files. Do not change the place where pmft installs from the default, which should be `C:\Program Files (x86)\pmft`. 
 
 ## Usage
 
