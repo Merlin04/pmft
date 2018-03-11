@@ -9,7 +9,7 @@ import argparse
 import time
 
 # path to the real avrdude
-AVRDUDE_PATH = os.path.realpath("avrdude-pmft")
+AVRDUDE_PATH = "C:\\Program Files (x86)\\pmft\\avrdude-pmft"
 
 # real name of avrdude
 AVRDUDE_NAME="avrdude-pmft"
@@ -82,7 +82,7 @@ else: # if no port argument is present
   avrdude_args=" ".join(str(x) for x in args[1]) + " -P" + defaultport
 
 try: # try to invoke avrdude passing all the options
-  subprocess.check_call(AVRDUDE_PATH + "/" + AVRDUDE_NAME + " " + avrdude_args, shell=True)
+  subprocess.check_call(AVRDUDE_PATH + "\\" + AVRDUDE_NAME + " " + avrdude_args, shell=True)
 except subprocess.CalledProcessError, e: pass
 #  print "avrdude error:\n", e.output
 #  sys.exit(2)
