@@ -9,10 +9,10 @@ import argparse
 import time
 
 # path to the real avrdude
-AVRDUDE_PATH = "C:\\Program Files (x86)\\pmft\\avrdude-pmft"
+AVRDUDE_PATH = "\"C:\\Program Files (x86)\\pmft"
 
 # real name of avrdude
-AVRDUDE_NAME="avrdude-pmft"
+AVRDUDE_NAME="avrdude-pmft\""
 
 # prepare argument parser to understand -P PORT
 parser = argparse.ArgumentParser()
