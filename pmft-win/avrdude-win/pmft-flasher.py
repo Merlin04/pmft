@@ -47,13 +47,14 @@ if args[0].port:
   time.sleep(2)
 
   # args is a tuple with parsed -P PORT and the rest of the arguments, so it needs to be join back
-  avrdude_args=" ".join(str(x) for x in args[1]) + " -P" + args[0].port
+  avrdude_args=" ".join(str(x) for x in args[1]) + " -P " + args[0].port
+  # print(avrdude_args)
 
 else: # if no port argument is present
   # join all other arguments to be ready for avrdude invokation
   # avrdude_args=" ".join(str(x) for x in args[1])
-  defaultport = "COM0"
-  print("No port provided, using COM0...")
+  defaultport = "COM3"
+  print("No port provided, using COM3...")
   try: # try to initiate serial port connection on PORT with 1200 baudrate
     ser = serial.Serial(
       port=defaultport,
@@ -79,7 +80,8 @@ else: # if no port argument is present
   time.sleep(2)
 
   # args is a tuple with parsed -P PORT and the rest of the arguments, so it needs to be join back
-  avrdude_args=" ".join(str(x) for x in args[1]) + " -P" + defaultport
+  avrdude_args=" ".join(str(x) for x in args[1]) + " -P " + defaultport
+  # print(avrdude_args)
 
 try: # try to invoke avrdude passing all the options
   subprocess.check_call(AVRDUDE_PATH + "\\" + AVRDUDE_NAME + " " + avrdude_args, shell=True)

@@ -9,6 +9,6 @@ if (sys.argv[1] == "help"):
 filepath = sys.argv[1]
 if (sys.argv[2]):
     port = sys.argv[2]
-    os.system("python \"C:\\Program Files (x86)\\pmft\\pmft-flasher.py\" -p atmega32u4 -c avr109 -C \"C:\\Program Files (x86)\\pmft\\avrdude-pmft.conf\" -P " + port + " -U flash:w:" + pwd + "/" + filepath + ":i")
+    os.system("python \"C:\\Program Files (x86)\\pmft\\pmft-flasher.py\" -p atmega32u4 -c avr109 -C \"C:\\avrdude-pmft\\avrdude-pmft.conf\" -P " + port + " -U flash:w:" + pwd + "\\" + filepath + ":i")
 else:
-    os.system("python \"C:\\Program Files (x86)\\pmft\\pmft-flasher.py\" -p atmega32u4 -c avr109 -C \"C:\\Program Files (x86)\\pmft\\avrdude-pmft.conf\" -U flash:w:" + pwd + "/" + filepath + ":i")
+    os.system("python \"C:\\Program Files (x86)\\pmft\\pmft-flasher.py\" -p atmega32u4 -c avr109 -C \"C:\\avrdude-pmft\\avrdude-pmft.conf\" -U flash:w:" + pwd + "\\" + filepath + ":i")
