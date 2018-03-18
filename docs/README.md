@@ -24,7 +24,11 @@ Be sure to keep all of the files together, the python script copies the files in
 
 ### Windows:
 
-Double-click on the installer executable in the `pmft-win folder`. You don't need any other files. Do not change the place where pmft installs from the default, which should be `C:\Program Files (x86)\pmft`. 
+Double-click on the installer executable in the `pmft-win folder`. You don't need any other files. Do not change the place where pmft installs from the default, which should be `C:\Program Files (x86)\pmft`.
+
+NOTE:
+
+After you have run the installer, if pmft throws errors, make sure you are running it as an administrator. If you are, type `pip install pyserial` as an administrator into cmd. 
 
 ## Usage
 
